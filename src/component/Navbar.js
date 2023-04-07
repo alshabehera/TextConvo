@@ -22,7 +22,7 @@ export default function Navbar(props){
       <>
       <div className="form-check form-switch">
          <input className="form-check-input" type="checkbox" onClick={props.toggleMode} role="switch" id="flexSwitchCheckDefault"/>
-           <label className={`form-check-label text-${props.text} `}  HTMLfor="flexSwitchCheckDefault">{props.enable}</label>
+           <label className={`form-check-label text-${props.text} `}  htmlFor="flexSwitchCheckDefault">{props.enable}</label>
            </div>
            </>
     </div>

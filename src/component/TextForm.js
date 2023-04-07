@@ -6,25 +6,28 @@ const handleOnClick=()=>{
         console.log("Uppercase was clicked");
         let newText=text.toUpperCase();
         setText(newText);
+        props.ShowAlert("Upper Case has been Enable","success")
     }
     const handleOnClick1=()=>{
       console.log("lowercase was clicked");
       let newText=text.toLowerCase();
       setText(newText);
+      props.ShowAlert("Lower Case has been Enable","success")
     }
     const handleClearClick1=()=>{
       console.log("Clear text");
       let newText='';
       setText(newText);
+      props.ShowAlert("Text has been cleared","success")
     }
     const handleOnChange=(event)=>{
         console.log("Text is changed");
         setText(event.target.value);
-        
     }
     const handleExtraSpace =()=>{
       let newText=text.split(/[ ]+/);
       setText(newText.join(" "))
+      props.ShowAlert("Extra space has been removed","success")
     }
 
     const[text,setText]= useState('Enter your Text');
